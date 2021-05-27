@@ -1,0 +1,39 @@
+.T1 {
+    padding: 20px;
+    border: 3px solid orangered; 
+    width: 400px;
+    margin: 20px;
+}
+.T1 p {
+    text-align: center;
+    background-color: #eee;
+    padding: inherit;
+    border: inherit;
+}
+.T2 , .T3{
+    padding: 20px;
+    width: 400px;
+    margin: 20px; 
+}
+.T2 .one {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+.T2 .two {
+    font-family: 'Cairo', sans-serif;
+    font-weight: 700;
+}
+.T2 .three {
+    font-family: 'Jomhuria', cursive;
+    font-weight: 400;
+}
+.T3 .one {
+    font-size: 2.5rem;
+}
+.T3 .two {
+    font-size: 2rem;
+}   
+.T3 .three {
+    font-size: 1.5rem;
+}

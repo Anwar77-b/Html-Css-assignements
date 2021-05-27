@@ -1,0 +1,25 @@
+.parent .child .title {
+    color: red;
+}
+.parent .title {
+    color: blue;
+}
+/* .parent p {
+    color: green;
+}
+.title {
+    color: green;
+} */
+p , .title {
+    color: green;
+}
+.t1 , .t2 , .t3 ,.t4{
+    display: block;
+    width: fit-content;
+    max-width: 400px;
+    max-height: 35px;
+    padding: 10px;
+    margin: 15px;
+    background-color: #a52a2a;
+    overflow-x: hidden;
+} 

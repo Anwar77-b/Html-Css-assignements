@@ -1,0 +1,96 @@
+/*
+  CSS Selectors
+  - *
+  - Element => [p, div, h2]
+  - Element OtherElement => div p
+  - .class-name
+  - #id-name
+  - .parent .child
+  - .class-one.class-two
+  - .class-name div, .class-name p
+  - Element.class-name => p.class-name
+  - .parent > .child => Direct Child
+*/
+/*
+  CSS Selectors
+  - Element + Other Element => [div + p]
+  - Element ~ Other Elements => [p ~ div]
+  - [Attribute]
+  - Element[Attribute]
+  - [Attribute=Value]
+  - Element[Attribute=Value] => input[type="submit"]
+  - [Attribute~=Value] => Contains A Word
+  - [Attribute*=Value] => Contains A Atring
+  - [Attribute^=Value] => Start With A String
+*/
+/*
+  CSS Selectors
+  - :first-child
+  - :last-child
+  - :first-of-type
+  - :last-of-type
+  - :only-child
+*/
+/*
+  CSS Selectors
+  - :not(Selectors)
+  - :nth-child(n)
+  - :nth-last-child(n)
+  - :nth-of-type(n)
+  - :nth-last-of-type(n)
+*/
+/*
+  CSS Selectors
+  - :root
+  - :checked
+  - :empty
+  - :disabled
+  - :required
+  - :focus
+  - ::selection
+  - ::placeholder
+*/
+
+div {padding: auto;}
+div p {padding: auto;}
+.class {padding: auto;}
+#id {padding: auto;}
+.parent .child {padding: auto;}
+.class-1.class2 {padding: auto;}
+.class div, .class p {padding: auto;}
+div.class {padding: auto;}
+.parent > .child {padding: auto;}
+
+
+div + p {padding: auto;}
+div ~ p {padding: auto;}
+[attribute] {padding: auto;}
+div[attribute] {padding: auto;}
+[attribute="value"] {padding: auto;}
+div[attribute="value"] {padding: auto;}
+[attribute~="value"] {padding: auto;}
+[attribute*="value"] {padding: auto;}
+[attribute^="value"] {padding: auto;}
+
+
+div:first-child {padding: auto;}
+div:last-child {padding: auto;}
+div:first-of-type {padding: auto;}
+div:last-of-type {padding: auto;}
+div:only-child {padding: auto;}
+
+
+:not(div) {padding: auto;}
+:nth-child(1) {padding: auto;}
+:nth-last-child() {padding: auto;}
+:nth-of-type(1) {padding: auto;}
+:nth-last-of-type(1) {padding: auto;}
+
+:root {padding: auto;}
+:checked {padding: auto;}
+:empty {padding: auto;}
+:disabled {padding: auto;}
+:required {padding: auto;}
+:focus {padding: auto;}
+::selection {padding: auto;}
+::placeholder {padding: auto;}

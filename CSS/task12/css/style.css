@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.t1 {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    box-shadow: 6px 0 #ff5722 , -6px 0 #03a9f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff5722;
+    font-weight: bold;
+}
+.t2 .parent {
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: #eeeeee;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    align-items: flex-start;
+}
+.t2 .parent div {
+    width: 30%;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: center;
+    color: white;
+    background-color: #f44336;
+}
+.t3 .parent {
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #eeeeee;
+    display: flex;
+    flex-flow: row-reverse wrap-reverse;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.t3 .parent div {
+    width: 30%;
+    color: white;
+    background-color: #607d8b;
+    padding: 15px;
+}
+.t3 .parent .four , .t3 .parent .two ,  .t3 .parent .five ,  .t3 .parent .six {
+    height: 50%;
+}
+.t3 .parent .three {
+    align-self: start;
+}
+
+.t4 .parent {
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #eeeeee;
+    display: flex;
+    flex-flow: column ;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+.t4 .parent div {
+    height: calc((100% - 30px)/3);
+    padding: 15px;
+    color: white;
+    background-color: #009688; 
+    display: flex;
+    align-items: center;
+}
+.t4 .parent .two {
+    align-self: start;
+    width: calc((100% - 30px)/2);
+    justify-content: center;
+}
+.t5 .parent {
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: #eeeeee;
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.t5 .parent div {
+    width: 20%;
+    height: 50%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+} 
+.t5 .parent .one {
+    background-color: #ff9800;
+    order: 3;
+}
+.t5 .parent .two {
+    background-color: #8bc34a;
+    order: 2;
+    align-self: flex-end;
+}
+.t5 .parent .three {
+    background-color: #795548;
+    order: 1;
+}   
+.t5 .parent .four {
+    background-color: #673ab7;
+    order: 4;
+    align-self: flex-end;
+}

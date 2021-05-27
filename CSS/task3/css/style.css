@@ -1,0 +1,37 @@
+.t1 {
+    display: inline-block;
+    background-color: #EEE;
+    padding: 15px;
+    margin: 15px;
+}
+.sh1 {
+    border: 5px solid red;
+    outline: 5px solid black;
+}
+.sh2 {
+    border-color: blue green;
+    border-style: solid;
+    border-width: 5px;
+    outline: 5px solid black;
+}
+.sh3 {
+    border-width: 5px;
+    border-style: dashed;
+    border-color: red green blue yellow;
+    outline: 5px solid black;
+}
+.t2 {
+    width: 400px;
+    background-color: #EEE;
+    padding: 15px;
+    margin: 15px;
+}
+.e1 {
+    border-left: 5px solid crimson;
+}
+.e2 {
+    visibility: hidden;
+}
+.e3 {
+    border-left: 5px solid darkcyan;
+}

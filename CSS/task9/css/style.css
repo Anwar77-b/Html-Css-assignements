@@ -1,0 +1,92 @@
+body {
+    counter-reset: p-counter;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+hr {
+    margin: 50px;
+    border: 5px solid black;
+}
+.t1 div {
+    width: 300px;
+    height: 60px;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: #eee;
+}
+.t1 div:empty {
+    background-color: red;
+}
+.t2 div {
+    width: fit-content;
+    max-width: 312px;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: #d4d4d4;
+    position: relative;
+
+}
+.t2 div::first-letter {
+    visibility: hidden;
+}
+.t2 div::before {
+    content: "1";
+    color: white;
+    background-color: red;
+    position: absolute;
+    padding: 10px;
+    top: 5px;
+    left: -15px;
+}
+
+
+.t3 p {
+    width: 360px;
+    background-color: #eee;
+    padding: 15px;
+    margin: 20px auto;
+    position: relative;
+    border-left: 5px solid#e91e63;
+}
+.t3 p::after {
+    content: attr(data-person);
+    background-color: #d4d4d4;
+    width: 50px;
+    padding: 10px;
+    position: absolute;
+    top: 5px;
+    left: -100px;
+}
+
+.t3 p::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    left: -25px;
+    border: 10px solid black;
+    border-color: transparent #e91e63 transparent transparent;
+}
+
+
+.t4 p {
+    background-color: #eee;
+    padding: 15px;
+    width: 600px;
+    margin: 20px auto;
+    border-right: 5px solid #f44336;
+    position: relative;
+}
+.t4 p::before {
+    counter-increment: p-counter;
+    content: counter(p-counter);
+    display: inline-block;
+    padding: 15px;
+    width: 25px;
+    text-align: center;
+    color: white;
+    background-color: #f44336;
+    position: absolute;
+    top: 0;
+    left: -55px;
+}

@@ -1,0 +1,82 @@
+Q1
+    /* any element with class title */
+    .title {
+    }
+
+    /* any element with id nav */
+    #nav {
+    }
+
+    /* any element with div tag */
+    div {
+    }
+
+    /* any element with h2 tag */
+    h2 {
+    }
+
+Q2
+    <!-- external styling -->
+    <link rel="stylesheet" href="css/task1.css" />
+    <!-- internal styling -->
+    <style>
+        p {
+            color: red;
+        }
+    </style>
+    <!-- inline styling -->
+    <p style="color: blue;">This Is Our Paragraph</p>
+
+Q3
+    <link rel="stylesheet" href="/assets/css/master.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+Q4
+        /* valid */
+    ._user-name {
+    }
+
+    /* valid */
+    .-user-name {
+    }
+
+    /* not valid */
+    .1user-name {
+    }
+
+    /* not valid */
+    .@user-name {
+    }
+
+    /* valid */
+    .user@name {
+    }
+
+    /* valid */
+    ._user10name {
+    }
+
+    /* valid */
+    .u {
+    }
+
+Q5
+        /* Good */
+    .USERNAME {
+    }
+
+    /* Bad */
+    .UserName {
+    }
+
+    /* Good */
+    .user-name {
+    }
+
+    /* Bad */
+    .userName {
+    }
+
+    /* Good */
+    .usernameprofile {
+    }

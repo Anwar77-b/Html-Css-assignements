@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* :root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+} */
+* {
+    box-sizing:border-box
+}
+.t1 {
+    width: 500px;
+    height: 175px;
+    padding: 15px;
+    margin: 20px auto;
+    background-color: #f2f2f4;
+    text-align: center;
+    transition-property: margin;
+    transition-duration: 0.5s;
+}
+.t1 .child {
+    background-color: #dededc;
+    padding: 20px;
+    transition-property: margin;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+}
+.t1:hover {
+    margin-top: 40px;    
+}
+.t1:hover .child {
+    margin-top: 40px;
+}
+.t2 {
+    position: relative !important;
+}
+.t2 div {
+    visibility: hidden !important;
+}
+.t2 div::before {
+    content: "Elzero";
+    display: inline-block;
+    visibility: visible !important;
+    position: relative !important;
+    width: 400px !important;
+    padding: 20px !important;
+    background-color: #dededc !important;
+    margin: 20px auto !important;
+    text-align: center !important; 
+    font-size: 16px !important;
+    font-weight: bold;
+    color: black !important;
+    border: none !important;
+}
+.t3 div {
+    width: 400px;
+    padding: var(--mainPadding, 10px);
+    margin: 10px;
+    color: var(--mainColor, red);
+    border: 2px solid var(--mainColor, black);
+}
